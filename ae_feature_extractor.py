@@ -2,17 +2,16 @@
 # coding: utf-8
 
 
-import pandas as pd
 import numpy as np
+import pandas as pd
+import tensorflow as tf
+from keras.layers import (AveragePooling1D, BatchNormalization, Conv1D, Dense,
+                          Flatten, Input, MaxPooling1D, Reshape, UpSampling1D)
+from keras.layers import ELU, PReLU, LeakyReLU
+from keras.models import Model, Sequential
+from keras.optimizers import RMSprop
 from scipy import stats
 from sklearn.preprocessing import StandardScaler
-from keras.layers import Input, Dense, Flatten, Reshape, BatchNormalization
-from keras.layers import Conv1D, UpSampling1D, MaxPooling1D, AveragePooling1D
-from keras.models import Model, Sequential
-from keras.layers.advanced_activations import ReLU
-from keras.optimizers import RMSprop
-import tensorflow as tf
-
 
 C_PATH = "data/merged_chest_fltr.pkl"
 W1_PATH = "data/subj_merged_bvp_w.pkl"

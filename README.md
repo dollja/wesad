@@ -1,7 +1,8 @@
 ## Stress Detection from Multimodal Wearable Sensor Data using autoencoder latent features
 ### Dataset: WESAD 
-https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29
+https://uni-siegen.sciebo.de/s/HGdUkoNlW1Ub0Gx 
 
+Classifying WESAD mental stress data using autoencoder to extract features
 
 Run scripts in the following order (can take a while) to prepare data and extract features from the latent layer of autoencoder model: </br>
 1. Preprocess and merge subject data
@@ -9,7 +10,7 @@ Run scripts in the following order (can take a while) to prepare data and extrac
 python merge_subj_data.py
 </br></br>
 Input data path: 'data/WESAD/'</br>
-Generates the following files in data folder:</br>
+Generates the following files in data folder:</br>in
 subj_merged_acc_w.pkl</br>
 subj_merged_bvp_w.pkl</br>
 subj_merged_eda_temp_w.pkl</br>

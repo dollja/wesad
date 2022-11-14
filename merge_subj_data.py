@@ -3,7 +3,7 @@
 
 # In[1]:
 
-
+%pip install seaborn
 import DataPreprocessing as dp
 
 
@@ -16,5 +16,7 @@ dp.preprocess()
 # In[ ]:
 
 
+import seaborn as sns
 
 
+# %%
