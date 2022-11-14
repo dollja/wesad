@@ -2,7 +2,7 @@
 ### Dataset: WESAD 
 https://uni-siegen.sciebo.de/s/HGdUkoNlW1Ub0Gx 
 
-Classifying WESAD mental stress data using autoencoder to extract features
+Cloned from: https://github.com/srovins/wesad
 
 Run scripts in the following order (can take a while) to prepare data and extract features from the latent layer of autoencoder model: </br>
 ## 1. Preprocess and merge subject data
