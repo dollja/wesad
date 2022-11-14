@@ -157,14 +157,14 @@ def merge_chest_data():
             merged_data = np.concatenate((merged_data, last_subj), axis=0)
             print("merged_data.shape: ", merged_data.shape)
             
-    fn_merged = 'data/merged_chest.pkl'
+    fn_merged = 'data/merged_chest_fltr.pkl'
     pd.DataFrame(merged_data, columns=chest_columns).to_pickle(fn_merged)
     
 
 
 
 def filter_chest_data():
-    df = pd.read_pickle(("merged_chest.pkl"))
+    df = pd.read_pickle(("merged_chest_fltr.pkl"))
     df_fltr = df[df["label"].isin([1,2,3])]
     df_fltr = df_fltr[df_fltr["temp"]>0]
     pd.DataFrame(df_fltr, columns=chest_columns).to_pickle("data/merged_chest_fltr.pkl")
