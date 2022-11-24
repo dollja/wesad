@@ -3,6 +3,8 @@
 
 
 import numpy as np
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 import pandas as pd
 import tensorflow as tf
 from keras.layers import (AveragePooling1D, BatchNormalization, Conv1D, Dense,
@@ -13,7 +15,7 @@ from keras.optimizers import RMSprop
 from scipy import stats
 from sklearn.preprocessing import StandardScaler
 
-C_PATH = "data/merged_chest_fltr.pkl"
+C_PATH = "data/merged_chest_fltr.pkl"   
 W1_PATH = "data/subj_merged_bvp_w.pkl"
 W2_PATH = "data/subj_merged_eda_temp_w.pkl"
 feat_sf700 = ['ecg', 'emg', 'eda', 'temp', 'resp']

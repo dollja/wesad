@@ -3,7 +3,6 @@
 
 # In[1]:
 
-%pip install seaborn
 import DataPreprocessing as dp
 
 
